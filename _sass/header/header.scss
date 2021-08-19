@@ -5,13 +5,14 @@ header
     width: 100%;
     padding-bottom: 10px;
     border-bottom: 1px solid $border-color;
+    background-color: #08080a;
 }
 
 .site-title
 {
     color: $title-color !important;
     font-weight: 900;
-    padding: 10px 0px 10px 0px;
+    padding: 20px 0px 10px 0px;
     text-align: left;
 }
 

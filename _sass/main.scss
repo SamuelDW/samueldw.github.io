@@ -42,10 +42,15 @@ a:hover
     font-weight: 600;
     font-size: 50px;
     text-align: justify;
-    border: 4px solid rgb(78,255,232);
+    border: 4px solid $icon-font-color;
     width: 70%;
     padding: 5%;
     margin-left: 10%;
     margin-top: 10%;
-    text-transform: uppercase;
+    background-color: #08080a;
+}
+
+h2
+{
+    font-size: 40px;
 }
