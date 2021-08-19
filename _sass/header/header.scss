@@ -1,3 +1,5 @@
+@import "variables";
+
 header
 {
     width: 100%;
@@ -15,12 +17,12 @@ header
 
 #title
 {
-    color: rgb(78,255,232);
+    color: $icon-font-color;
 }
 
 #title:visited
 {
-    color: rgb(78,255,232);
+    color: $icon-font-color;
 }
 
 .site-navigation
@@ -30,11 +32,41 @@ header
     text-align: center;
 }
 
-i,
-.fas
+.navigation-section
 {
-    color: rgb(78,255,232);
+    display: inline-grid;
+
+    i,
+    .fas
+    {
+        color: $icon-font-color;
+    }
+
+    a
+    {
+        color: $intro-font-color;
+    }
+
+    a:visited
+    {
+        color: $intro-font-color;
+    }
 }
+
+.navigation-section:hover
+{
+    i,
+    .fas
+    {
+        color: $intro-font-color;
+    }
+
+    a
+    {
+        color: $icon-font-color;
+    }
+}
+
 
 @media screen and (max-width: 458px) {
     .site-title

@@ -1,0 +1,12 @@
+# Site Configuration
+timezone: Europe/London
+
+#Build Command
+profile: TRUE
+livereload: TRUE
+
+#Liquid
+liquid: 
+  error_mode: warn
+  strict_filters: false
+  strict_variables: false
