@@ -1,0 +1,16 @@
+.form-section
+{
+    color: white;
+}
+
+input
+{
+    width: 100%;
+    background: none;
+    border: 2px solid $intro-font-color;
+}
+
+input:focus
+{
+    border: 2px solid $icon-font-color;
+}

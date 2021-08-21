@@ -1878,3 +1878,14 @@ h6 {
   .social-media-icon .fab {
     font-size: 30px;
     color: #4effe8; }
+
+.form-section {
+  color: white; }
+
+input {
+  width: 100%;
+  background: none;
+  border: 2px solid #C5C6C7; }
+
+input:focus {
+  border: 2px solid #4effe8; }
