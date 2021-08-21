@@ -7,6 +7,7 @@ footer
     position: absolute;
     bottom: 0px;
     background-color: #08080a;
+    border-top: 1px solid $border-color;
 }
 
 h6
@@ -22,7 +23,8 @@ h6
 
 .social-media-icon
 {
-    padding: 10px 0px 10px 0px;
+    padding: 10px 10px 10px 10px;
+    display: inline-flex;
 
     .fab
     {

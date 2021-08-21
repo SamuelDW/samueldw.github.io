@@ -69,11 +69,16 @@ header
 }
 
 
-@media screen and (max-width: 458px) {
+@media screen and (max-width: 460px) {
     .site-title
     {
-        font-size: 15px;
+        font-size: 12px;
         padding-left: 12px;
+    }
+
+    .site-navigation
+    {
+        font-size: 13px;
     }
 }
 

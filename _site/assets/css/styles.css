@@ -47,6 +47,11 @@ a:hover {
 h2 {
   font-size: 40px; }
 
+.server-error {
+  color: #C5C6C7;
+  text-align: center;
+  padding-top: 50%; }
+
 /* ================================================================== */
 /* This file has a mobile-to-tablet, and tablet-to-desktop breakpoint */
 /* ================================================================== */
@@ -1833,10 +1838,13 @@ header {
 .navigation-section:hover a {
   color: #4effe8; }
 
-@media screen and (max-width: 458px) {
+@media screen and (max-width: 460px) {
   .site-title {
-    font-size: 15px;
-    padding-left: 12px; } }
+    font-size: 12px;
+    padding-left: 12px; }
+
+  .site-navigation {
+    font-size: 13px; } }
 @media screen and (min-width: 459px) and (max-width: 768px) {
   .site-title {
     font-size: 13px; } }
@@ -1854,7 +1862,8 @@ footer {
   text-align: center;
   position: absolute;
   bottom: 0px;
-  background-color: #08080a; }
+  background-color: #08080a;
+  border-top: 1px solid #45A29E; }
 
 h6 {
   font-size: large;
@@ -1864,7 +1873,8 @@ h6 {
   color: #C5C6C7; }
 
 .social-media-icon {
-  padding: 10px 0px 10px 0px; }
+  padding: 10px 10px 10px 10px;
+  display: inline-flex; }
   .social-media-icon .fab {
     font-size: 30px;
     color: #4effe8; }
