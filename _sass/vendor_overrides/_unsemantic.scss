@@ -1,0 +1,133 @@
+@use "sass:math";
+.gc {
+    @extend %grid-container;
+}
+
+
+.gp {
+    @extend %grid-parent;
+}
+
+.m-hide {
+    @extend .hide-on-mobile;
+}
+
+.t-hide {
+    @extend .hide-on-tablet;
+}
+
+.g-hide {
+    @extend %hide;
+}
+
+@for $i from 1 through 19 {
+    $num: $i * 5;
+
+    .m-#{$num} {
+        @extend %mobile-grid-#{$num};
+    }
+
+    .t-#{$num} {
+        @extend %tablet-grid-#{$num};
+    }
+
+    .g-#{$num} {
+        @extend %grid-#{$num};
+    }
+
+    .m-pre-#{$num} {
+        @extend %mobile-prefix-#{$num};
+    }
+
+    .t-pre-#{$num} {
+        @extend %tablet-prefix-#{$num};
+    }
+
+    .pre-#{$num} {
+        @extend %prefix-#{$num};
+    }
+
+    .m-suf-#{$num} {
+        @extend %mobile-suffix-#{$num};
+    }
+
+    .t-suf-#{$num} {
+        @extend %tablet-suffix-#{$num};
+    }
+
+    .suf-#{$num} {
+        @extend %suffix-#{$num};
+    }
+
+    .m-push-#{$num} {
+        @extend %mobile-push-#{$num};
+    }
+
+    .t-push-#{$num} {
+        @extend %tablet-push-#{$num};
+    }
+
+    .m-pull-#{$num} {
+        @extend %mobile-push-#{$num};
+    }
+
+    .t-pull-#{$num} {
+        @extend %tablet-push-#{$num};
+    }
+}
+
+@for $i from 1 through 2 {
+    $num: $i * 33;
+
+    .m-#{$num} {
+        @extend %mobile-grid-#{$num};
+    }
+
+    .t-#{$num} {
+        @extend %tablet-grid-#{$num};
+    }
+
+    .g-#{$num} {
+        @extend %grid-#{$num};
+    }
+
+    .m-pre-#{$num} {
+        @extend %mobile-prefix-#{$num};
+    }
+
+    .t-pre-#{$num} {
+        @extend %tablet-prefix-#{$num};
+    }
+
+    .pre-#{$num} {
+        @extend %prefix-#{$num};
+    }
+
+    .m-suf-#{$num} {
+        @extend %mobile-suffix-#{$num};
+    }
+
+    .t-suf-#{$num} {
+        @extend %tablet-suffix-#{$num};
+    }
+
+    .suf-#{$num} {
+        @extend %suffix-#{$num};
+    }
+
+    .m-push-#{$num} {
+        @extend %mobile-push-#{$num};
+    }
+
+    .t-push-#{$num} {
+        @extend %tablet-push-#{$num};
+    }
+
+    .m-pull-#{$num} {
+        @extend %mobile-push-#{$num};
+    }
+
+    .t-pull-#{$num} {
+        @extend %tablet-push-#{$num};
+    }
+}
