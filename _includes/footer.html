@@ -1,16 +1,16 @@
 <footer id="site-footer">
     <div class="gc" id="footer-content">
-        <div class="grid-33">
+        <div class="grid-33 t-33 m-100 m-pull-100">
             <p>&copy; Walker Development Studio</p>
         </div>
-        <div class="grid-33 gp" id="social-icons">
+        <div class="grid-33 t-33 m-100 m-push-100 gp" id="social-icons">
             {% for item in site.data.social %}
-            <a href="{{ item.link }}" class="footer-link">
-                {{ item.icon}}
-            </a>
+                <a href="{{ item.link }}" class="footer-link" target="_blank">
+                    {{ item.icon}}
+                </a>
             {% endfor %}
         </div>
-        <div class="grid-33">
+        <div class="grid-33 t-33 m-100">
             <p>Privacy Policy</p>
         </div>
     </div>

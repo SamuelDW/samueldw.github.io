@@ -6,6 +6,11 @@
     display: flex;
     flex-direction: row;
     text-align: center;
+
+    @media screen and (max-width: $media-mobile-max) {
+        display: flex;
+        flex-direction: column;
+    }
 }
 
 #social-icons {
@@ -19,4 +24,4 @@
 
 footer {
     flex-shrink: 0;
-  }
+}

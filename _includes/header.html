@@ -4,8 +4,8 @@
             <div class="nav-container m-hide">
                 <nav>
                     {% for item in site.data.navigation %}
-                        <a href="{{ item.link }}" class="header-link">
-                            <div class="m-30 m-pre-45 t-5 nav-link" {% if page.url == item.link %} id="active-link" {% endif %}>
+                        <a href="{{ item.link }}" class="header-link" {% if page.url == item.link %} id="active-link" {% endif %}>
+                            <div class="m-30 m-pre-45 t-20 nav-link">
                                 {{ item.name }}
                             </div>
                         </a>
