@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>{{ page.title }}</title>
+        <link rel="stylesheet" href="/assets/css/styles.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1"/>
+        <meta name="author" content="Walker Development Studio">
+        <meta charset="utf-8">
+        <meta name="description" content="Walker Development Studios is a small company, bringing custom solutions
+        to your business needs. We can cater to a wide variety of needs.">
+    </head>
+    <body>
+        {% include header.html %}
+        {{ content }}
+
+        <script src="/assets/js/navigation.js"></script>
+    </body>
+</html>
