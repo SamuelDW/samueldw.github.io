@@ -17,7 +17,7 @@
 }
 
 .g-hide {
-    @extend %hide;
+    @extend .hide-on-desktop;
 }
 
 @for $i from 1 through 19 {
