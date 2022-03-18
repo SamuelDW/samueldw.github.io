@@ -1,0 +1,22 @@
+#site-footer {
+    background-color: red;
+}
+
+#footer-content {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+}
+
+#social-icons {
+    display: flex;
+    flex-direction: row;
+    column-gap: 2rem;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+}
+
+footer {
+    flex-shrink: 0;
+  }
