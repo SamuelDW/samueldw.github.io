@@ -1,5 +1,6 @@
 #site-footer {
-    background-color: red;
+    background-color: #0b090a;
+    color: white;
 }
 
 #footer-content {
@@ -14,12 +15,16 @@
 }
 
 #social-icons {
+    i {
+        color: white;
+    }
     display: flex;
     flex-direction: row;
     column-gap: 2rem;
     justify-content: center;
     align-items: center;
     font-size: 1.5rem;
+    color: white;
 }
 
 footer {

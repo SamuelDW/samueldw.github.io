@@ -1,26 +1,25 @@
 <header id="mobile-header">
     <div class="gc">
-        <div class="m-80 t-100 gp" style="background-color: red;">
+        <div class="m-80 t-100 grid-100 gp">
             <div class="nav-container m-hide">
                 <nav>
                     {% for item in site.data.navigation %}
-                        <a href="{{ item.link }}" class="header-link" {% if page.url == item.link %} id="active-link" {% endif %}>
-                            <div class="m-30 m-pre-45 t-20 nav-link">
-                                {{ item.name }}
-                            </div>
+                    <div class="m-30 m-pre-45 nav-link">
+                        <a href="{{ item.link }}" class="header-link">
+                            {{ item.name }}
                         </a>
+                    </div>
                     {% endfor %}
                 </nav>
             </div>
             <div class="m-30 m-pre-45" id="show-hide-menu">
-                <p>Logo</p>
+                <p>W</p>
             </div>
         </div>
         <div class="m-20 t-hide g-hide" id="short-nav">
             {% for item in site.data.navigation %}
                 {% if page.url == item.link %}
                     {{ item.icon }}
-                    {{ item.name }}
                 {% endif %}
             {% endfor %}
         </div>

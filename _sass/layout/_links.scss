@@ -8,11 +8,10 @@ a {
 }
 
 .header-link {
-    padding: 0 1rem 0 1rem;
 
     &:hover,
     &:active {
-        background-color: pink;
+        border-bottom: 2px solid white;
     }
 }
 

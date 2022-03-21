@@ -1,17 +1,17 @@
 - name: Home
   link: /
   icon: <i class="fas fa-home"></i>
-- name: Services
-  link: /services.html
-  icon: <i class="fas fa-briefcase"></i>
 - name: Portfolio
   link: /portfolio.html
   icon: <i class="fas fa-images"></i>
+- name: Services
+  link: /services.html
+  icon: <i class="fas fa-briefcase"></i>
+- name: Testimonials
+  link: /testimonial.html
 - name: Blog
   link: /blog.html
   icon: <i class="fas fa-rss-square"></i>
 - name: Contact
   link: /contact.html
   icon: <i class="fas fa-at"></i>
-- name: Testimonials
-  link: /testimonial.html
