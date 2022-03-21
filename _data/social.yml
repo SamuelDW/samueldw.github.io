@@ -1,0 +1,12 @@
+- name: Github
+  link: https://github.com/SamuelDW
+  icon: <i class="fab fa-github"></i>
+- name: LinkedIn
+  link: https://www.linkedin.com/in/samueldw/
+  icon: <i class="fab fa-linkedin-in"></i>
+- name: Email
+  link: /
+  icon: <i class="fas fa-at"></i>
+- name: Instagram
+  link: https://www.instagram.com/walkerdevelopmentstudio/
+  icon: <i class="fab fa-instagram"></i>

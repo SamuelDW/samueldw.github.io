@@ -13,8 +13,10 @@
     </head>
     <body>
         {% include header.html %}
-        {{ content }}
-
+        <div class="content">
+            {{ content }}
+        </div>
+        {% include footer.html %}
         <script src="/assets/js/navigation.js"></script>
     </body>
 </html>
