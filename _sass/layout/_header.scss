@@ -1,7 +1,8 @@
 header {
-    background-color: #0b090a;
+    background-color: white;
     padding-bottom: 0.9rem;
     padding-top: 0.5rem;
+
 }
 
 nav {
@@ -11,7 +12,7 @@ nav {
         text-align: justify;
         row-gap: 0.5rem;
         margin-top: 0.5rem;
-        color: white;
+        color: black;
         margin-bottom: 1rem;
     }
 
@@ -30,11 +31,6 @@ nav {
     }
 }
 
-#header-logo {
-    max-width:100%;
-    max-height:100%;
-}
-
 .nav-link {
     font-weight: 500;
     margin-top: 0.25rem;
@@ -47,55 +43,5 @@ nav {
         &:nth-child(5) {
             text-align: center;
         }
-    }
-}
-
-#short-nav {
-    font-size: 1.5rem;
-    text-align: center;
-    float: right;
-    display: flex;
-    flex-direction: column;
-    color: white;
-}
-
-#show-hide-menu {
-    background-color: #0b090a;
-    position: relative;
-    margin-top: 1.2rem;
-
-    @media screen and (min-width: $media-tablet-min) and (max-width: $media-tablet-max) {
-        //margin-top: 2rem;
-    }
-
-    @media screen and (min-width: $media-desktop-min) {
-        margin-top: 0;
-    }
-
-    p {
-        background-color: black;
-        border-radius:  50%;
-        border: 3px solid white;
-        height: 5rem;
-        width: 5rem;
-        align-items: center;
-        justify-content: center;
-        display: flex;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        margin-right: -50%;
-        transform: translate(-50%, -50%);
-        color: white;
-
-        @media screen and (min-width: $media-tablet-min) and (max-width: $media-tablet-max) {
-            height: 5rem;
-            width: 5rem;
-        }
-
-        // @media screen and (min-width: $media-desktop-min) {
-        //     height: 8rem;
-        //     width: 8rem;
-        // }
     }
 }

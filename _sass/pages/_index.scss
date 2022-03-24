@@ -1,0 +1,119 @@
+#index-content {
+    text-align: center;
+    font-size: 1.5rem;
+    margin-bottom: 2.5rem;
+    padding: 1.5rem;
+    background-color: white;
+}
+
+.highlight-text {
+    color: #a4161a;
+    font-weight: 600;
+}
+
+.main-button {
+    border: 0.4rem solid #a4161a;
+    font-size: 1.2rem;
+    background: none;
+    padding: 1rem;
+
+    &:hover {
+        cursor: pointer;
+        transform: scale(0.95);
+    }
+}
+
+#index-container {
+    margin-left: 0;
+    padding-left: 0;
+    height: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+// .ripple,.ripple:before,.ripple:after {
+//     display:block;
+//     border-radius:2px;
+//     width:2px;
+//     height:2px;
+//     -webkit-animation:rip 6s 1 forwards;
+//     -moz-animation:rip 6s 1 forwards;
+//     animation: rip 6s 1 forwards;
+//   }
+//   .ripple {
+//     position:absolute;
+//     z-index:-1;
+//     top:40px;
+//     left:15px;
+//   }
+//   .ripple:before,.ripple:after {
+//     content:'';
+//     position:absolute;
+//   }
+//   .ripple:before {-webkit-animation-delay:.2s;-moz-animation-delay:.2s;top:5px;left:25px;animation-delay: rip 6s 1 forwards;}
+//   .ripple:after {-webkit-animation-delay:.8s;-moz-animation-delay:.8s;top:25px;left:0;animation-delay: rip 6s 1 forwards;}
+//   @-webkit-keyframes rip
+//   {
+//     0%  {
+//       box-shadow:0 0 0 0 transparent,
+//                  0 0 0 0 transparent,
+//                  0 0 0 0 transparent,
+//                  0 0 0 0 transparent;
+//     }
+//     15%  {
+//       box-shadow:0 0 0 0 #45c2c5,
+//                  0 0 0 0 rgba(255,255,255,0.4),
+//                  0 0 0 0 #45c2c5,
+//                  0 0 0 0 rgba(0,0,0,0.08);
+//     }
+//     100% {
+//       box-shadow:0 0 40px 200px #45c2c5,
+//                  0 0 10px 210px transparent,
+//                  0 0 30px 220px #45c2c5,
+//                  0 0 5px 230px transparent;
+//     }
+//   }
+//   @-moz-keyframes rip
+//   {
+//     0%  {
+//       box-shadow:0 0 0 0 transparent,
+//                  0 0 0 0 transparent,
+//                  0 0 0 0 transparent,
+//                  0 0 0 0 transparent;
+//     }
+//     15%  {
+//       box-shadow:0 0 0 0 #45c2c5,
+//                  0 0 0 0 rgba(255,255,255,0.4),
+//                  0 0 0 0 #45c2c5,
+//                  0 0 0 0 rgba(0,0,0,0.08);
+//     }
+//     100% {
+//       box-shadow:0 0 40px 200px #45c2c5,
+//                  0 0 10px 210px transparent,
+//                  0 0 30px 220px #45c2c5,
+//                  0 0 5px 230px transparent;
+//     }
+// }
+//     @keyframes rip
+//   {
+//     0%  {
+//       box-shadow:0 0 0 0 transparent,
+//                  0 0 0 0 transparent,
+//                  0 0 0 0 transparent,
+//                  0 0 0 0 transparent;
+//     }
+//     15%  {
+//       box-shadow:0 0 0 0 #45c2c5,
+//                  0 0 0 0 rgba(255,255,255,0.4),
+//                  0 0 0 0 #45c2c5,
+//                  0 0 0 0 rgba(0,0,0,0.08);
+//     }
+//     100% {
+//       box-shadow:0 0 40px 200px #45c2c5,
+//                  0 0 10px 210px transparent,
+//                  0 0 30px 220px #45c2c5,
+//                  0 0 5px 230px transparent;
+//     }
+//   }

@@ -1,4 +1,6 @@
 @import 'vendors/unsemantic-grid-responsive-tablet.scss';
+@import 'vendors/paint.scss';
+@import 'vendors/ripple';
 
 @import 'vendor_overrides/unsemantic';
 
@@ -9,3 +11,5 @@
 @import 'layout/links';
 @import 'layout/header';
 @import 'layout/footer';
+
+@import 'pages/index';
