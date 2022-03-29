@@ -9,10 +9,12 @@ a {
 
 .header-link {
     color: black;
+
     &:hover,
     &:active {
         border-bottom: 2px solid #a4161a;
         color: #a4161a;
+        padding: 0;
     }
 }
 

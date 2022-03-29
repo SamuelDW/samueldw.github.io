@@ -3,14 +3,17 @@ header {
     padding-bottom: 0.9rem;
     padding-top: 0.5rem;
 
+    @media screen and (max-width: $media-mobile-max) {
+        margin-bottom: 1rem;
+    }
 }
 
 nav {
     @media screen and (max-width: $media-mobile-max) {
         display: flex;
         flex-direction: column;
-        text-align: justify;
-        row-gap: 0.5rem;
+        text-align: center;
+        row-gap: 0.7rem;
         margin-top: 0.5rem;
         color: black;
         margin-bottom: 1rem;
@@ -19,29 +22,37 @@ nav {
     @media screen and (min-width: $media-tablet-min) and (max-width: $media-tablet-max) {
         display: flex;
         flex-direction: row;
-        column-gap: 4.5rem;
-        justify-content: space-evenly;
+        column-gap: 1rem;
+        justify-content: space-around;
     }
 
     @media screen and (min-width: $media-desktop-min) {
         display: flex;
         flex-direction: row;
-        column-gap: 3rem;
-        justify-content: space-between;
+        //column-gap: 3rem;
+        justify-content: space-around;
     }
 }
 
-.nav-link {
-    font-weight: 500;
-    margin-top: 0.25rem;
+.mobile-menu-button {
+    font-family: 'Patrick Hand SC', cursive;
+    font-size: 2rem;
 
-    @media screen and (min-width: $media-desktop-min) {
-        &:nth-child(4) {
-            text-align: right;
-        }
-
-        &:nth-child(5) {
-            text-align: center;
-        }
+    @media screen and (min-width: $media-tablet-min) {
+        display: none;
     }
 }
+// .nav-link {
+//     font-weight: 500;
+//     margin-top: 0.25rem;
+
+//     @media screen and (min-width: $media-desktop-min) {
+//         &:nth-child(4) {
+//             text-align: right;
+//         }
+
+//         &:nth-child(5) {
+//             text-align: center;
+//         }
+//     }
+// }

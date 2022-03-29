@@ -4,6 +4,18 @@
     margin-bottom: 2.5rem;
     padding: 1.5rem;
     background-color: white;
+
+    @media screen and (max-width: $media-mobile-max) {
+        display: flex;
+        flex-direction: column;
+        //text-align: justify;
+        row-gap: 0.5rem;
+        font-size: 0.85rem;
+    }
+
+    @media screen and (min-width: $media-tablet-min) and (max-width: $media-tablet-max) {
+        font-size: 1.5rem;
+    }
 }
 
 .highlight-text {
@@ -16,6 +28,15 @@
     font-size: 1.2rem;
     background: none;
     padding: 1rem;
+
+    @media screen and (max-width: $media-mobile-max) {
+        margin-bottom: 1rem;
+        font-size: 0.85rem;
+    }
+
+    @media screen and (min-width: $media-tablet-min) and (max-width: $media-tablet-max) {
+        margin-bottom: 1rem;
+    }
 
     &:hover {
         cursor: pointer;
