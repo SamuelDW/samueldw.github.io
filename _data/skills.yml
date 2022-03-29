@@ -1,0 +1,27 @@
+- name: HTML5 CSS3
+  icon: <i class="fa-brands fa-html5"></i> <i class="fa-brands fa-css3-alt"></i>
+  width: 25
+  id: html-skill
+- name: JavaScript
+  icon: <i class="fa-brands fa-js-square"></i>
+  width: 25
+  suffix: 50
+  id: javascript
+- name: PHP
+  icon: <i class="fa-brands fa-php"></i>
+  width: 50
+  suffix: 50
+  id: php
+- name: MySQL
+  icon: <i class="fa-solid fa-database"></i>
+  id: mysql
+- name: Symfony
+  icon: <i class="fa-brands fa-symfony"></i>
+  width: 25
+  id: symfony
+- name: CakePHP
+  icon: <img src="https://www.cakephp.org/img/flags/I-bake-with-CakePHP.png" class="cake-logo" style="max-width:25%;">
+  width: 25
+  id: cakephp
+
+

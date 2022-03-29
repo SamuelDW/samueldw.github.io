@@ -1,101 +1,58 @@
 header {
-    background-color: #0b090a;
+    background-color: white;
     padding-bottom: 0.9rem;
     padding-top: 0.5rem;
+
+    @media screen and (max-width: $media-mobile-max) {
+        margin-bottom: 1rem;
+    }
 }
 
 nav {
     @media screen and (max-width: $media-mobile-max) {
         display: flex;
         flex-direction: column;
-        text-align: justify;
-        row-gap: 0.5rem;
+        text-align: center;
+        row-gap: 0.7rem;
         margin-top: 0.5rem;
-        color: white;
+        color: black;
         margin-bottom: 1rem;
     }
 
     @media screen and (min-width: $media-tablet-min) and (max-width: $media-tablet-max) {
         display: flex;
         flex-direction: row;
-        column-gap: 4.5rem;
-        justify-content: space-evenly;
+        column-gap: 1rem;
+        justify-content: space-around;
     }
 
     @media screen and (min-width: $media-desktop-min) {
         display: flex;
         flex-direction: row;
-        column-gap: 3rem;
-        justify-content: space-between;
+        //column-gap: 3rem;
+        justify-content: space-around;
     }
 }
 
-#header-logo {
-    max-width:100%;
-    max-height:100%;
-}
+.mobile-menu-button {
+    font-family: 'Patrick Hand SC', cursive;
+    font-size: 2rem;
 
-.nav-link {
-    font-weight: 500;
-    margin-top: 0.25rem;
-
-    @media screen and (min-width: $media-desktop-min) {
-        &:nth-child(4) {
-            text-align: right;
-        }
-
-        &:nth-child(5) {
-            text-align: center;
-        }
+    @media screen and (min-width: $media-tablet-min) {
+        display: none;
     }
 }
+// .nav-link {
+//     font-weight: 500;
+//     margin-top: 0.25rem;
 
-#short-nav {
-    font-size: 1.5rem;
-    text-align: center;
-    float: right;
-    display: flex;
-    flex-direction: column;
-    color: white;
-}
+//     @media screen and (min-width: $media-desktop-min) {
+//         &:nth-child(4) {
+//             text-align: right;
+//         }
 
-#show-hide-menu {
-    background-color: #0b090a;
-    position: relative;
-    margin-top: 1.2rem;
-
-    @media screen and (min-width: $media-tablet-min) and (max-width: $media-tablet-max) {
-        //margin-top: 2rem;
-    }
-
-    @media screen and (min-width: $media-desktop-min) {
-        margin-top: 0;
-    }
-
-    p {
-        background-color: black;
-        border-radius:  50%;
-        border: 3px solid white;
-        height: 5rem;
-        width: 5rem;
-        align-items: center;
-        justify-content: center;
-        display: flex;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        margin-right: -50%;
-        transform: translate(-50%, -50%);
-        color: white;
-
-        @media screen and (min-width: $media-tablet-min) and (max-width: $media-tablet-max) {
-            height: 5rem;
-            width: 5rem;
-        }
-
-        // @media screen and (min-width: $media-desktop-min) {
-        //     height: 8rem;
-        //     width: 8rem;
-        // }
-    }
-}
+//         &:nth-child(5) {
+//             text-align: center;
+//         }
+//     }
+// }

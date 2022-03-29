@@ -1,0 +1,55 @@
+#index-content {
+    text-align: center;
+    font-size: 1.5rem;
+    margin-bottom: 2.5rem;
+    padding: 1.5rem;
+    background-color: white;
+
+    @media screen and (max-width: $media-mobile-max) {
+        display: flex;
+        flex-direction: column;
+        //text-align: justify;
+        row-gap: 0.5rem;
+        font-size: 0.85rem;
+    }
+
+    @media screen and (min-width: $media-tablet-min) and (max-width: $media-tablet-max) {
+        font-size: 1.5rem;
+    }
+}
+
+.highlight-text {
+    color: #a4161a;
+    font-weight: 600;
+}
+
+.main-button {
+    border: 0.4rem solid #a4161a;
+    font-size: 1.2rem;
+    background: none;
+    padding: 1rem;
+
+    @media screen and (max-width: $media-mobile-max) {
+        margin-bottom: 1rem;
+        font-size: 0.85rem;
+    }
+
+    @media screen and (min-width: $media-tablet-min) and (max-width: $media-tablet-max) {
+        margin-bottom: 1rem;
+    }
+
+    &:hover {
+        cursor: pointer;
+        transform: scale(0.95);
+    }
+}
+
+#index-container {
+    margin-left: 0;
+    padding-left: 0;
+    height: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
