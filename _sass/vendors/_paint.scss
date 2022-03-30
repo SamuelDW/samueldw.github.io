@@ -111,6 +111,9 @@
       &.dashed.thin{
         border:dashed 2px #41403E;
       }
+      &.lined.thick.error {
+         border:solid 7px #a4161a;
+      }
 }
 
 button {
