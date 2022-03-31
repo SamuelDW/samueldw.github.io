@@ -1,34 +1,51 @@
 #search-form {
-    // display: flex;
-    // flex-direction: column;
-    // row-gap: 0.8rem;
-    // margin-top: 3rem;
-    // flex-wrap: wrap;
-
-    // @media screen and (min-width: $media-tablet-min) and (max-width: $media-tablet-max) {
-    //     flex-direction: row;
-    //     flex-wrap: wrap;
-
-    //     padding-bottom: 1rem;
-    //     margin-top: 1rem;
-    // }
-
-    // @media screen and (max-width: $media-mobile-max) {
-    //     flex-direction: row;
-    //     flex-wrap: wrap;
-
-    //     padding-bottom: 0.2rem;
-    //     margin-top: 1rem;
-    // }
-
     display: flex;
     flex-direction: column;
-    row-gap: 0.8rem;
+    @media screen and (min-width: $media-tablet-min) and (max-width: $media-tablet-max) {
+        flex-direction: row;
+        margin-top: 0.8rem;
+        flex-wrap: wrap;
+    }
+    @media screen and (min-width: $media-desktop-min) {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    //row-gap: 0.8rem;
 }
 
 .form-group {
     display: flex;
     flex-direction: column;
+    margin-bottom: 0.8rem;
+}
+
+#extra-fields {
+    @media screen and (min-width: $media-tablet-min) {
+        order: 1;
+    }
+}
+
+.form-checkbox-group {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 0.8rem;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+
+    @media screen and (min-width: $media-desktop-min) {
+        flex-wrap: wrap;
+    }
+}
+
+.checkbox-group {
+    justify-content: space-evenly;
+    display: flex;
+
+    &:first-child {
+        flex-basis: 100%;
+        justify-content: left;
+    }
 }
 
 .form-group-buttons {

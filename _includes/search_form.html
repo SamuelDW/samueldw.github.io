@@ -1,48 +1,37 @@
-<div class="m-100 gp">
+<div class="m-100 grid-100 gp">
     <form id="search-form">
 
-        <div class="m-90 m-pre-5 form-group">
+        <div class="m-90 m-pre-5 t-45 t-pre-5 grid-50 form-group">
             <label for="name-search">Project Name</label>
             <input type="text" name="name-search" class="bordered-input lined thin" id="search-text">
         </div>
-        <div id="extra-fields" class="hidden">
-            <div class="m-90 m-pre-5">
+        <div id="extra-fields" class="hidden grid-100">
+            <div class="m-90 m-pre-5 t-90 t-pre-5 grid-50 form-group">
                 <label for="project-search">Project Type</label>
-            <select name="project-search" class="bordered-input lined thin">
-                <option>Symfony</option>
-                <option>CakePHP</option>
-            </select>
+                <select name="project-search" class="bordered-input lined thin">
+                    <option selected disabled value>Please select an option</option>
+                    <option>Full Stack</option>
+                    <option>Back End</option>
+                    <option>Front End</option>
+                    <option>Non Tech</option>
+                </select>
+            </div>
+
+            <div class="m-90 m-pre-5 t-90 t-pre-5 grid-45 form-checkbox-group">
+                <div class="checkbox-group">
+                    <label>Skills</label>
+                </div>
+                {% for item in site.data.skills %}
+                    <div class="checkbox-group">
+                        <label for="{{ item.name }}">{{ item.name }}</label>
+                        <input type="checkbox" name="{{ item.name }}">
+                    </div>
+                {% endfor %}
             </div>
         </div>
-        <div class="m-90 m-pre-5 form-group-buttons">
+        <div class="m-90 m-pre-5 t-45 t-pre-5 grid-50 form-group-buttons">
             <button type="submit" class="bordered-input thin lined" id="search-button"><i class="fa-solid fa-magnifying-glass"></i></button>
             <i class="fa-solid fa-filter bordered-input lined thin" id="filter-button"></i>
         </div>
-
-
-
-        <!-- <div class="m-100">
-            <label for="project-search">Project Type</label>
-            <select name="project-search" class="bordered-input lined thin">
-                <option>Symfony</option>
-                <option>CakePHP</option>
-            </select>
-        </div>
-        <div class="m-100">
-            <label for="skill-search" class="m-hide">Skill Type</label>
-            <select name="skill-search" class="bordered-input lined thin">
-                <option>PHP</option>
-                <option>HTML</option>
-            </select>
-        </div>
-        <div class="m-100">
-            <label for="year-select" class="m-hide">Year</label>
-            <select name="year-select" class="bordered-input lined thin m-hide">
-                <option>2018</option>
-                <option>2019</option>
-            </select>
-        </div> -->
-
-        <!-- <button type="submit" class="bordered-input thin lined" id="search-button">Search <i class="fa-solid fa-magnifying-glass"></i></button> -->
     </form>
 </div>
