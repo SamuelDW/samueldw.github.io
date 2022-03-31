@@ -1,6 +1,42 @@
 #search-form {
+    // display: flex;
+    // flex-direction: column;
+    // row-gap: 0.8rem;
+    // margin-top: 3rem;
+    // flex-wrap: wrap;
+
+    // @media screen and (min-width: $media-tablet-min) and (max-width: $media-tablet-max) {
+    //     flex-direction: row;
+    //     flex-wrap: wrap;
+
+    //     padding-bottom: 1rem;
+    //     margin-top: 1rem;
+    // }
+
+    // @media screen and (max-width: $media-mobile-max) {
+    //     flex-direction: row;
+    //     flex-wrap: wrap;
+
+    //     padding-bottom: 0.2rem;
+    //     margin-top: 1rem;
+    // }
+
     display: flex;
     flex-direction: column;
     row-gap: 0.8rem;
-    margin-top: 3rem;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group-buttons {
+    display: flex;
+    flex-direction: row;
+}
+
+#search-button {
+    margin-right: 1rem;
+    margin-left: 0;
 }

@@ -1,21 +1,12 @@
-input,
-select {
-    width: 100%;
-    padding: 0.2rem;
-    color: #0b090a;
-
-    &:focus {
-        border-color: #a4161a !important;
-    }
-}
-
-option {
-    background-color: white;
-}
-
 button {
-    width: 100%;
-    padding: 0.5rem;
+    width: 85%;
+    padding: 0.2rem;
     border-color: #a4161a !important;
+    color: #0b090a;
+    font-size: 0.85rem !important;
+}
+
+input {
+    width: 100%;
 }
 

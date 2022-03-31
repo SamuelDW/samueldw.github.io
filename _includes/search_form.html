@@ -1,29 +1,48 @@
-<div class="grid-90 suffix-10">
+<div class="m-100 gp">
     <form id="search-form">
-        <label for="name-search">Project Name</label>
-        <input type="text" name="name-search" class="bordered-input lined thin" id="search-text">
 
-        <label for="project-search">Project Type</label>
-        <select name="project-search" class="bordered-input lined thin">
-            <option>Symfony</option>
-            <option>CakePHP</option>
-        </select>
+        <div class="m-90 m-pre-5 form-group">
+            <label for="name-search">Project Name</label>
+            <input type="text" name="name-search" class="bordered-input lined thin" id="search-text">
+        </div>
+        <div id="extra-fields" class="hidden">
+            <div class="m-90 m-pre-5">
+                <label for="project-search">Project Type</label>
+            <select name="project-search" class="bordered-input lined thin">
+                <option>Symfony</option>
+                <option>CakePHP</option>
+            </select>
+            </div>
+        </div>
+        <div class="m-90 m-pre-5 form-group-buttons">
+            <button type="submit" class="bordered-input thin lined" id="search-button"><i class="fa-solid fa-magnifying-glass"></i></button>
+            <i class="fa-solid fa-filter bordered-input lined thin" id="filter-button"></i>
+        </div>
 
-        <label for="skill-search">Skill Type</label>
-        <select name="skill-search" class="bordered-input lined thin">
-            <option>PHP</option>
-            <option>HTML</option>
-        </select>
 
-        <label for="year-select">Year</label>
-        <select name="year-select" class="bordered-input lined thin">
-            <option>2018</option>
-            <option>2019</option>
-        </select>
 
-        <label for="is-completed">Is Complete?</label>
-        <input type="checkbox" name="is-completed">
+        <!-- <div class="m-100">
+            <label for="project-search">Project Type</label>
+            <select name="project-search" class="bordered-input lined thin">
+                <option>Symfony</option>
+                <option>CakePHP</option>
+            </select>
+        </div>
+        <div class="m-100">
+            <label for="skill-search" class="m-hide">Skill Type</label>
+            <select name="skill-search" class="bordered-input lined thin">
+                <option>PHP</option>
+                <option>HTML</option>
+            </select>
+        </div>
+        <div class="m-100">
+            <label for="year-select" class="m-hide">Year</label>
+            <select name="year-select" class="bordered-input lined thin m-hide">
+                <option>2018</option>
+                <option>2019</option>
+            </select>
+        </div> -->
 
-        <button type="submit" class="bordered-input thin lined" id="search-button">Search <i class="fa-solid fa-magnifying-glass"></i></button>
+        <!-- <button type="submit" class="bordered-input thin lined" id="search-button">Search <i class="fa-solid fa-magnifying-glass"></i></button> -->
     </form>
 </div>
