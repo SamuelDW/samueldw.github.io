@@ -6,7 +6,7 @@
     </div>
     <nav class="m-hide">
         {% for item in site.data.navigation %}
-            <a href="{{ item.link }}" class="header-link thin link-underlined">
+            <a href="{{ item.link | relative_url }}" class="header-link thin link-underlined">
                 {{ item.name }}
             </a>
         {% endfor %}

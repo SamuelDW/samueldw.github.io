@@ -7,7 +7,16 @@ title: Portfolio
         {% include search_form.html %}
     </div>
     <div class="grid-100">
-        Work
+        {%for posts in site.posts %}
+            {% if posts.type == 'project' %}
+                {{ posts.title }}
+                {{ posts.tags }}
+                {{ posts.project_type }}
+                {{ posts.excerpt }}
+                {{ posts.url | relative_url }}
+                <a href="{{ posts.url }}" style="color: black;">{{ posts.title }}</a>
+            {% endif %}
+        {% endfor %}
     </div>
 </div>
 
