@@ -1,0 +1,14 @@
+.bordered-logo {
+    @extend .bordered;
+    padding: 0;
+
+    &.node-js {
+        border-color: #333333 !important;
+    }
+
+    &.html-skill {
+        border-color: #D84924 !important;
+    }
+}
+
+

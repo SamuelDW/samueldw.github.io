@@ -1,19 +1,27 @@
+@import 'abstract/variables';
+
 @import 'vendors/unsemantic-grid-responsive-tablet.scss';
 @import 'vendors/paint.scss';
 @import 'vendors/ripple';
 
 @import 'vendor_overrides/unsemantic';
+@import 'vendor_overrides/paint';
 
 @import 'reset/fonts';
 @import 'reset/base';
 
-
+// Layouts across the whole site
 @import 'layout/links';
 @import 'layout/header';
 @import 'layout/footer';
 @import 'layout/forms';
 @import 'layout/inputs';
 
+// Components
+@import 'components/card_portfolio';
+@import 'components/skills';
+
+// Page specific styling
 @import 'pages/not-found';
 @import 'pages/index';
 @import 'pages/portfolio';

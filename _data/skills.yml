@@ -3,8 +3,8 @@
   id: html-skill
 - name: CSS3
   icon: <i class="fa-brands fa-css3-alt"></i>
-- name: JavaScript
   id: css
+- name: JavaScript
   icon: <i class="fa-brands fa-js-square"></i>
   id: javascript
 - name: PHP
@@ -19,5 +19,7 @@
 - name: CakePHP
   icon: <img src="https://www.cakephp.org/img/flags/I-bake-with-CakePHP.png" class="cake-logo" style="max-width:25%;">
   id: cakephp
-
+- name: Node.js
+  icon: <i class="fa-brands fa-node-js"></i>
+  id: node-js
 

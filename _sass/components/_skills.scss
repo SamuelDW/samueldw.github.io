@@ -1,0 +1,15 @@
+$padding: 10px;
+$margin: 0;
+
+#node-js {
+    background-color: $node-highlight-color;
+    padding: $padding;
+    margin: $margin;;
+}
+
+#html-skill {
+    background-color: $white;
+    color: $html-color;
+    padding: $padding;
+    margin: $margin;
+}

@@ -9,12 +9,14 @@ title: Portfolio
     <div class="grid-100">
         {%for posts in site.posts %}
             {% if posts.type == 'project' %}
-                {{ posts.title }}
-                {{ posts.tags }}
-                {{ posts.project_type }}
-                {{ posts.excerpt }}
-                {{ posts.url | relative_url }}
-                <a href="{{ posts.url }}" style="color: black;">{{ posts.title }}</a>
+            {% capture project_title %}{{ posts.title }}{% endcapture %}
+            {% capture primary_skill %}{{ posts.primary_skill }}{% endcapture %}
+            {% capture post_excerpt %}{{posts.excerpt }}{% endcapture %}
+                {% include portfolio/card.html
+                    title=project_title
+                    project_skill=primary_skill
+                    post_summary=post_excerpt
+                %}
             {% endif %}
         {% endfor %}
     </div>

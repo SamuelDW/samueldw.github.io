@@ -1,0 +1,14 @@
+<div class="gc card bordered thick lined">
+    <div class="m-85 card-title">
+        <h3>{{ include.title }}</h3>
+    </div>
+    {% for item in site.data.skills %}
+        {% if item.name == include.project_skill %}
+            <div class="m-15">
+            <p class="card-skill bordered-logo lined thin {{ item.id }}" id="{{ item.id }}">{{ item.icon }}</p>
+            </div>
+        {% endif %}
+    {% endfor %}
+
+    <p>{{ include.post_summary }}</p>
+</div>

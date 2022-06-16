@@ -1,6 +1,6 @@
 #form-container {
     padding-bottom: 0.8rem;
-    border-bottom: 3px solid #0b090a;
+    border-bottom: 3px solid $main-border-color;
     margin-bottom: 0.8rem;
 }
 
@@ -13,7 +13,6 @@
      display: flex;
      flex-direction: column;
      padding: 0;
-    // //height: 100%;
 
     @media screen and (min-width: $media-tablet-min) and (max-width: $media-tablet-max) {
         flex-direction: column;
