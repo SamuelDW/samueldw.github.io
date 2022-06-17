@@ -1,14 +1,23 @@
-<div class="gc card bordered thick lined">
-    <div class="m-85 card-title">
+<div class="card bordered thick lined">
+    <div class="card-title">
         <h3>{{ include.title }}</h3>
+        {% for item in site.data.skills %}
+            {% if item.name == include.project_skill %}
+                <p class="card-skill bordered-logo lined thin {{ item.id }}" id="{{ item.id }}">{{ item.icon }}</p>
+            {% endif %}
+        {% endfor %}
     </div>
-    {% for item in site.data.skills %}
-        {% if item.name == include.project_skill %}
-            <div class="m-15">
-            <p class="card-skill bordered-logo lined thin {{ item.id }}" id="{{ item.id }}">{{ item.icon }}</p>
-            </div>
+    <div class="m-90 t-90 m-pre-5">
+        <p>{{ include.post_summary }}</p>
+    </div>
+    <div class="m-90 m-pre-5 t-90 links">
+        {% assign website = include.website_link %}
+        {% assign has_website = include.website_bool %}
+        {% if has_website == 'true' %}
+            <a href="{{ website }}" class="card-link"><i class="fa-solid fa-earth-asia card-website-link"></i> Website Active</a><br>
+        {% elsif has_website == 'false' %}
+            <a class="disabled-link"><i class="fa-solid fa-earth-asia"></i> Website Inactive</a><br>
         {% endif %}
-    {% endfor %}
-
-    <p>{{ include.post_summary }}</p>
+        <a href="{{ include.github }}" class="card-link"><i class="fa-brands fa-github card-github-link"></i> Github Repo</a>
+    </div>
 </div>

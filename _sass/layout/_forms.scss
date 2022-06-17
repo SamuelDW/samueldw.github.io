@@ -32,7 +32,6 @@
     flex-wrap: wrap;
     justify-content: space-between;
 
-
     @media screen and (min-width: $media-desktop-min) {
         flex-wrap: wrap;
     }
@@ -41,6 +40,8 @@
 .checkbox-group {
     justify-content: space-evenly;
     display: flex;
+    flex: 1 0 21%;
+    margin: 5px;
 
     &:first-child {
         flex-basis: 100%;

@@ -10,20 +10,16 @@
 }
 
 #portfolio-content {
-     display: flex;
-     flex-direction: column;
-     padding: 0;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+}
 
-    @media screen and (min-width: $media-tablet-min) and (max-width: $media-tablet-max) {
-        flex-direction: column;
-        display: flex;
-        padding: 0;
-    }
+#scroll-area {
+    height: 60vh;
+    overflow-y: scroll;
 
-    @media screen and (max-width: $media-mobile-max){
-        flex-direction: column;
-        display: flex;
-
-        padding: 0;
+    @media screen and (min-width: $media-tablet-min) {
+        height: 80vh;
     }
 }

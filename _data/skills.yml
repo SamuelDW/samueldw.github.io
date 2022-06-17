@@ -5,7 +5,7 @@
   icon: <i class="fa-brands fa-css3-alt"></i>
   id: css
 - name: JavaScript
-  icon: <i class="fa-brands fa-js-square"></i>
+  icon: <i class="fa-brands fa-js"></i>
   id: javascript
 - name: PHP
   icon: <i class="fa-brands fa-php"></i>
@@ -22,4 +22,6 @@
 - name: Node.js
   icon: <i class="fa-brands fa-node-js"></i>
   id: node-js
+- name: Other
+
 

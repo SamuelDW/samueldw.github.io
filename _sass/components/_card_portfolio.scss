@@ -1,7 +1,19 @@
 .card {
     font-size: 1rem;
     margin-bottom: 1rem;
-    display: flexbox;
+    display: flex;
+    flex-direction: column;
+
+    @media screen and (min-width: $media-tablet-min) and (max-width: $media-tablet-max) {
+        float: left;
+        width: 44%;
+    }
+
+    @media screen and (min-width: $media-desktop-min) {
+        float: left;
+        width: 30%
+    }
+
 }
 
 .card-skill {
@@ -13,7 +25,23 @@
     justify-content: center;
 }
 
-.card:hover {
+.card-title {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.links {
+    display: flex;
+    flex-direction: row;
+    column-gap: 1rem;
+    justify-content: space-between;
+    font-size: 0.9rem;
+}
+
+.card:hover,
+.card:active {
     cursor: pointer;
     transform: scale(0.98);
 }

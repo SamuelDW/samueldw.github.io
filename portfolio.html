@@ -6,16 +6,22 @@ title: Portfolio
     <div class="grid-100 t-100 gp bordered-right thick lined" id="form-container">
         {% include search_form.html %}
     </div>
-    <div class="grid-100">
+    <div class="grid-100 gp" id="scroll-area">
         {%for posts in site.posts %}
             {% if posts.type == 'project' %}
             {% capture project_title %}{{ posts.title }}{% endcapture %}
             {% capture primary_skill %}{{ posts.primary_skill }}{% endcapture %}
-            {% capture post_excerpt %}{{posts.excerpt }}{% endcapture %}
+            {% capture post_excerpt %}{{ posts.content | markdownify | strip_html | truncatewords: 12 }}{% endcapture %}
+            {% capture post_github %}{{ posts.github }}{% endcapture %}
+            {% capture post_bool_website %}{{ posts.has_website }}{% endcapture %}
+            {% capture post_website_link %}{{ posts.website }}{% endcapture %}
                 {% include portfolio/card.html
                     title=project_title
                     project_skill=primary_skill
                     post_summary=post_excerpt
+                    github=post_github
+                    website_link=post_website_link
+                    website_bool=post_bool_website
                 %}
             {% endif %}
         {% endfor %}
