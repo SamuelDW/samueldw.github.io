@@ -1,6 +1,7 @@
 <div class="card bordered thick lined">
     <div class="card-title">
-        <h3>{{ include.title }}</h3>
+        <h3 class="title">{{ include.title }}</h3>
+        <div class="hidden tag-list {{ include.tags_post }}"></div>
         {% for item in site.data.skills %}
             {% if item.name == include.project_skill %}
                 <p class="card-skill bordered-logo lined thin {{ item.id }}" id="{{ item.id }}">{{ item.icon }}</p>

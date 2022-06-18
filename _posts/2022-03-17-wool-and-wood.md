@@ -1,6 +1,6 @@
 ---
 title: Wool & Wood API
-tags: PHP HTML5 CSS3 MySQL JavaScript CakePHP
+tags: PHP, HTML5, CSS3, MySQL, JavaScript, CakePHP
 primary_skill: Node.js
 project_type: Full Stack
 type: project

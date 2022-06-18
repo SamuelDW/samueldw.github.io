@@ -15,6 +15,7 @@ title: Portfolio
             {% capture post_github %}{{ posts.github }}{% endcapture %}
             {% capture post_bool_website %}{{ posts.has_website }}{% endcapture %}
             {% capture post_website_link %}{{ posts.website }}{% endcapture %}
+            {% capture post_tags %}{{ posts.tags }}{% endcapture %}
                 {% include portfolio/card.html
                     title=project_title
                     project_skill=primary_skill
@@ -22,6 +23,7 @@ title: Portfolio
                     github=post_github
                     website_link=post_website_link
                     website_bool=post_bool_website
+                    tags_post=post_tags
                 %}
             {% endif %}
         {% endfor %}

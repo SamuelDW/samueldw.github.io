@@ -1,6 +1,6 @@
 ---
 title: Immigration Evidence Helper
-tags: PHP HTML5 CSS3 MySQL JavaScript CakePHP
+tags: PHP, HTML5, CSS3, MySQL, JavaScript
 primary_skill: JavaScript
 project_type: Front End
 type: project
