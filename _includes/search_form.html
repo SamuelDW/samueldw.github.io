@@ -24,7 +24,7 @@
                 {% for item in site.data.skills %}
                     <div class="checkbox-group">
                         <label for="{{ item.name }}">{{ item.name }}</label>
-                        <input type="checkbox" name="{{ item.name }}">
+                        <input type="checkbox" name="{{ item.name }}" class="skill-checkbox">
                     </div>
                 {% endfor %}
             </div>
