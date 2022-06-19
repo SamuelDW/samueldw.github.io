@@ -152,7 +152,7 @@ $lang-reverse: right !default;
 
   %#{$scope}clearfix:before,
   %#{$scope}clearfix:after {
-    content: ".";
+    //content: ".";
     display: block;
     overflow: hidden;
     visibility: hidden;

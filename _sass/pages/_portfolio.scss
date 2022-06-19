@@ -20,21 +20,24 @@
     overflow-y: scroll;
 
     display: grid;
-    //grid-template-columns: 1fr;
 
     @media screen and (min-width: $media-tablet-min) and (max-width: $media-tablet-max) {
         height: 80vh;
-       // grid-template-columns: 1fr 1fr;
+        grid-template-columns: repeat(2, 50%);
+        grid-auto-rows: auto;
+        justify-content: space-evenly;
+        justify-items: center;
+        align-items: start;
     }
 
     @media screen and (min-width: $media-desktop-min) {
         height: 75vh;
-        display: grid;
-        grid-template-columns: 33% 33% 33%;
-        grid-template-rows: max-content 1fr;
+        grid-template-columns: repeat(3, 33%);
+        grid-template-rows: repeat(max-content);
         justify-content: space-evenly;
         justify-items: center;
         align-items: start;
+
     }
 }
 
