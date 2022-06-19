@@ -1,19 +1,14 @@
 .card {
+    //align-self: center;
     font-size: 1rem;
     margin-bottom: 1rem;
-    display: flex;
-    flex-direction: column;
+    // display: flex;
+    // flex-direction: column;
 
     @media screen and (min-width: $media-tablet-min) and (max-width: $media-tablet-max) {
-        float: left;
-        width: 44%;
+        // float: left;
+        // width: 44%;
     }
-
-    @media screen and (min-width: $media-desktop-min) {
-        float: left;
-        width: 30%
-    }
-
 }
 
 .card-skill {

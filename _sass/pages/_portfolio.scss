@@ -19,8 +19,22 @@
     height: 60vh;
     overflow-y: scroll;
 
-    @media screen and (min-width: $media-tablet-min) {
+    display: grid;
+    //grid-template-columns: 1fr;
+
+    @media screen and (min-width: $media-tablet-min) and (max-width: $media-tablet-max) {
         height: 80vh;
+       // grid-template-columns: 1fr 1fr;
+    }
+
+    @media screen and (min-width: $media-desktop-min) {
+        height: 75vh;
+        display: grid;
+        grid-template-columns: 33% 33% 33%;
+        grid-template-rows: max-content 1fr;
+        justify-content: space-evenly;
+        justify-items: center;
+        align-items: start;
     }
 }
 

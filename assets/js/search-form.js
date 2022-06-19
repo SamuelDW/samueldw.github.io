@@ -8,7 +8,6 @@ const searchButton = document.querySelector('#search-button'),
 
 searchButton.addEventListener('click', function(e) {
     e.preventDefault()
-    if (textField.value === '') return
 
     /**
      * Get all the selected checkboxes with names,
@@ -19,6 +18,8 @@ searchButton.addEventListener('click', function(e) {
         .entries(skillCheckboxes)
         .filter(([key, value]) => value.checked)
         .map(([key, value])=> value.name)
+
+    if (textField.value === '' && checkedBoxes.length === 0) return
 
     /**
      * Grab the hidden classes that hold the tags, and split into readable
@@ -37,22 +38,35 @@ searchButton.addEventListener('click', function(e) {
         .entries(tagsFromPosts)
         .map(([key, value]) => value.tags.some(r => checkedBoxes.includes(r)))
 
-    cardTitles
-        .forEach(title => {
-            let titleValue = title.textContent.toLocaleLowerCase(),
-                searchValue = textField.value.toLocaleLowerCase()
+    cardTitles.forEach((value, key) => {
+        let titleValue = value.textContent.toLocaleLowerCase(),
+            searchValue = textField.value.toLocaleLowerCase()
+            //console.log()
 
-            if (!titleValue.includes(searchValue)) {
-               const card = title.parentNode.parentNode
-               card.classList.add('hidden')
-            }
-        })
+        const card = value.parentNode.parentNode
+
+        if (!titleValue.includes(searchValue) && checkedBoxes.length === 0) {
+            card.classList.add('hidden')
+            return
+        }
+        if (searchValue === '' && matchedTagsOnSearch[key] === false) {
+            card.classList.add('hidden')
+
+        }
+        if (!titleValue.includes(searchValue) && matchedTagsOnSearch[key] === false) {
+            card.classList.add('hidden')
+            return
+        }
+
+        // if search value is found, show card
+        // if tags matched = true, show card
+        // if search value not found but tags matched = true show card
+        // if tags matched and no search value, show cards with tags
+        if (matchedTagsOnSearch[key] === false || !titleValue.includes(searchValue)) console.log('hi')
+        console.log(matchedTagsOnSearch[key], value.textContent)
+    })
 })
 
 filterButton.addEventListener('click', function (e) {
     extraFields.classList.toggle('hidden')
-
-    const tags = Object
-        .entries(postTags)
-        .map(([key, value]) => {return {name: value.parentNode.outerText, tags: value.classList[2].split(',')}})
 })
