@@ -1,6 +1,6 @@
 ---
 title: Zombies Companion App
-tags: CSS3, HTML5, JavaScript, PHP, MySQL
+tags: CSS3, HTML5, JavaScript, PHP, MySQL, Symfony
 project_type: full stack
 type: project
 primary_skill: Symfony

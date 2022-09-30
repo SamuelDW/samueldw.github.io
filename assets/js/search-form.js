@@ -4,7 +4,8 @@ const searchButton = document.querySelector('#search-button'),
     textField = document.querySelector('#search-text'),
     cardTitles = document.querySelectorAll('.title')
     postTags = document.querySelectorAll('.tag-list'),
-    skillCheckboxes = document.querySelectorAll('.skill-checkbox')
+    skillCheckboxes = document.querySelectorAll('.skill-checkbox'),
+    resetButton = document.querySelector('#reset-button')
 
 searchButton.addEventListener('click', function(e) {
     e.preventDefault()
@@ -41,7 +42,6 @@ searchButton.addEventListener('click', function(e) {
     cardTitles.forEach((value, key) => {
         let titleValue = value.textContent.toLocaleLowerCase(),
             searchValue = textField.value.toLocaleLowerCase()
-            //console.log()
 
         const card = value.parentNode.parentNode
 
@@ -51,7 +51,7 @@ searchButton.addEventListener('click', function(e) {
         }
         if (searchValue === '' && matchedTagsOnSearch[key] === false) {
             card.classList.add('hidden')
-
+            return
         }
         if (!titleValue.includes(searchValue) && matchedTagsOnSearch[key] === false) {
             card.classList.add('hidden')
@@ -62,11 +62,23 @@ searchButton.addEventListener('click', function(e) {
         // if tags matched = true, show card
         // if search value not found but tags matched = true show card
         // if tags matched and no search value, show cards with tags
-        if (matchedTagsOnSearch[key] === false || !titleValue.includes(searchValue)) console.log('hi')
-        console.log(matchedTagsOnSearch[key], value.textContent)
+        // if (matchedTagsOnSearch[key] === false || !titleValue.includes(searchValue))
+        // console.log(matchedTagsOnSearch[key], value.textContent)
     })
 })
 
 filterButton.addEventListener('click', function (e) {
     extraFields.classList.toggle('hidden')
+})
+
+/**
+ * Remove all the hidden tags from the posts on click
+ */
+resetButton.addEventListener('click', e => {
+    e.preventDefault()
+
+    cardTitles.forEach(value => {
+        const card = value.parentNode.parentNode
+        card.classList.remove('hidden')
+    })
 })
