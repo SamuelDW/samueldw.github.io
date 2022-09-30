@@ -1,0 +1,21 @@
+button {
+    width: 85%;
+    padding: 0.2rem;
+    border-color: #a4161a !important;
+    color: #0b090a;
+    font-size: 0.85rem !important;
+
+    @media screen and (min-width: $media-tablet-min) and (max-width: $media-tablet-max) {
+        //width: 50%;
+    }
+}
+
+input[type='text'],
+select {
+    width: 100%;
+
+    @media screen and (min-width: $media-tablet-min) and (max-width: $media-tablet-max) {
+        //width: %;
+    }
+}
+

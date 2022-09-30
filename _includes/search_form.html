@@ -1,0 +1,27 @@
+<div class="m-100 grid-100 gp">
+    <form id="search-form">
+
+        <div class="m-90 m-pre-5 t-45 t-pre-5 grid-50 form-group">
+            <label for="name-search">Project Name</label>
+            <input type="text" name="name-search" class="bordered-input lined thin" id="search-text">
+        </div>
+        <div id="extra-fields" class="hidden grid-100">
+            <div class="m-90 m-pre-5 t-100 grid-100 form-checkbox-group">
+                <div class="checkbox-group">
+                    <label>Skills</label>
+                </div>
+                {% for item in site.data.skills %}
+                    <div class="checkbox-group">
+                        <label for="{{ item.name }}">{{ item.name }}</label>
+                        <input type="checkbox" name="{{ item.name }}" class="skill-checkbox">
+                    </div>
+                {% endfor %}
+            </div>
+        </div>
+        <div class="m-90 m-pre-5 t-45 t-pre-5 grid-50 form-group-buttons">
+            <button type="submit" class="bordered-input thin lined" id="search-button"><i class="fa-solid fa-magnifying-glass"></i></button>
+            <button type="button" class="bordered-input thin lined" id="reset-button">Reset</button>
+            <i class="fa-solid fa-filter bordered-input lined thin" id="filter-button"></i>
+        </div>
+    </form>
+</div>

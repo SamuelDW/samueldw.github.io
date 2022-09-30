@@ -1,0 +1,59 @@
+#search-form {
+    display: flex;
+    flex-direction: column;
+    @media screen and (min-width: $media-tablet-min) and (max-width: $media-tablet-max) {
+        flex-direction: row;
+        margin-top: 0.8rem;
+        flex-wrap: wrap;
+    }
+    @media screen and (min-width: $media-desktop-min) {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    //row-gap: 0.8rem;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0.8rem;
+}
+
+#extra-fields {
+    @media screen and (min-width: $media-tablet-min) {
+        order: 1;
+    }
+}
+
+.form-checkbox-group {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 0.8rem;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    @media screen and (min-width: $media-desktop-min) {
+        flex-wrap: wrap;
+    }
+}
+
+.checkbox-group {
+    justify-content: space-evenly;
+    display: flex;
+    margin: 5px;
+
+    &:first-child {
+        flex-basis: 100%;
+        justify-content: left;
+    }
+}
+
+.form-group-buttons {
+    display: flex;
+    flex-direction: row;
+}
+
+#search-button {
+    margin-right: 1rem;
+    margin-left: 0;
+}

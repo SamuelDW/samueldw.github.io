@@ -26,3 +26,20 @@ a {
 #active-link {
     border-bottom: 3px solid white;
 }
+
+.disabled-link {
+    color: gray;
+    pointer-events: none;
+}
+
+.card-github-link {
+    color: purple;
+}
+
+.card-website-link {
+    color: #00C6DE;
+}
+
+.card-link {
+    color: black;
+}

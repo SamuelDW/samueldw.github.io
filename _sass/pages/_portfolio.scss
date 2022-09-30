@@ -1,0 +1,43 @@
+#form-container {
+    padding-bottom: 0.8rem;
+    border-bottom: 3px solid $main-border-color;
+    margin-bottom: 0.8rem;
+}
+
+#filter-button {
+    margin: 0 !important;
+    padding: 0.2rem;
+}
+
+#portfolio-content {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+}
+
+#scroll-area {
+    height: 60vh;
+    overflow-y: scroll;
+
+    display: grid;
+    grid-template-columns: repeat(var(--columns), 1fr);
+    grid-gap: 5px;
+
+    @media screen and (min-width: $media-tablet-min) {
+        height: 80vh;
+        justify-content: space-evenly;
+        justify-items: center;
+        align-items: start;
+        --columns: 2
+    }
+
+    @media screen and (min-width: $media-desktop-min) {
+        height: 75vh;
+        --columns: 3;
+
+    }
+}
+
+.hidden {
+    display: none;
+}

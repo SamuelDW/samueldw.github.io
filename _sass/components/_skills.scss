@@ -1,0 +1,32 @@
+$padding: 10px;
+$margin: 0;
+
+#node-js {
+    background-color: $node-highlight-color;
+    padding: $padding;
+    margin: $margin;;
+}
+
+#html-skill {
+    background-color: $white;
+    color: $html-color;
+    padding: $padding;
+    margin: $margin;
+}
+
+#javascript {
+    background-color: $javascript-highlight-color;
+    color: $javascript-color;
+    padding: $padding;
+    margin: $margin;
+}
+
+#symfony {
+    background-color: $ink-black;
+    color: $white;
+}
+
+#php {
+    background-color: $php-background;
+    color: $white;
+}
