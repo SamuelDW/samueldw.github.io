@@ -1,0 +1,10 @@
+---
+layout: default
+---
+<h1 class="page-title">{{ page.title }}</h1>
+{{ page.when }} {{ page.primary_skill }}
+{% for item in site.data.skills %}
+    {% if item.name == page.primary_skill %}
+        <p class="card-skill bordered-logo lined thin {{ item.id }}" id="{{ item.id }}">{{ item.icon }}</p>
+    {% endif %}
+{% endfor %}

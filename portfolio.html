@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Portfolio
+permalink: /portfolio/
 ---
 <div class="gc" id="portfolio-content">
     <div class="grid-100 t-100 gp bordered-right thick lined" id="form-container">
@@ -16,6 +17,7 @@ title: Portfolio
             {% capture post_bool_website %}{{ posts.has_website }}{% endcapture %}
             {% capture post_website_link %}{{ posts.website }}{% endcapture %}
             {% capture post_tags %}{{ posts.tags }}{% endcapture %}
+            {% capture post_link %}{{ posts.url }}{% endcapture %}
                 {% include portfolio/card.html
                     title=project_title
                     project_skill=primary_skill
@@ -24,6 +26,7 @@ title: Portfolio
                     website_link=post_website_link
                     website_bool=post_bool_website
                     tags_post=post_tags
+                    link_post=post_link
                 %}
             {% endif %}
         {% endfor %}
